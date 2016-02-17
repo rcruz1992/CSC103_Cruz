@@ -17,6 +17,36 @@ using std::endl;
 
 int main()
 {
-		
+	int n;
+	int count=0;
+
+	while(cin >> n)
+	{
+		if(n==2)
+			cout << "1\n";
+		else if(n==1)
+			cout << "0\n";
+		else
+		{
+			for(int i=1;i<n;i++)
+			{
+				if(n%i == 0)
+					count++;
+				else if(count > 1)
+					break;
+			}
+
+			if(count == 1)
+			{
+				cout << "1\n";
+				count=0;
+			}	
+			else
+			{
+				cout << "0\n";
+				count=0;
+			}
+		}
+	}
 	return 0;
 }
