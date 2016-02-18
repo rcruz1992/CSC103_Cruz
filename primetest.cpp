@@ -19,7 +19,7 @@ int main()
 {
 	int n;
 	int count=0;
-
+	
 	while(cin >> n)
 	{
 		if(n == 2)
