@@ -22,15 +22,15 @@ int main()
 
 	while(cin >> n)
 	{
-		if(n==2)
+		if(n == 2)
 			cout << "1\n";
-		else if(n==1 || n==0)
+		else if(n == 1 || n == 0)
 			cout << "0\n";
 		else
 		{
 			for(int i=1;i<n;i++)
 			{
-				if(n%i == 0)
+				if(n % i == 0)
 					count++;
 				else if(count > 1)
 					break;
